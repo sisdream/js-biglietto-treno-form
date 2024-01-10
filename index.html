@@ -16,29 +16,27 @@
             <form class="d-flex justify-content-center">
                 <!-- NOME E COGNOME -->
                 <div class="ms-3">
-                    <label class="title" for="">Nome e Cognome</label>
-                    <input type="text" class="form-control mb-3" id="user-name"/>
+                    <label for="nameSurname" class="form-label text-danger">Nome Cognome</label>
+                    <input id="user-name" type="text" class="form-control text-center border border-danger" name="nomeCognome" placeholder="Nome e cognome...">
                 </div>
                 <!-- KM DA PERCORRERE -->
                 <div class="ms-3">
-                    <label class="title" for="">Km da percorrere</label>
-                    <input type="text" class="form-control mb-3" id="path"/>
+                    <label for="nameSurname" class="form-label text-danger">Km di distanza</label>
+                    <input id="path" type="text" class="form-control text-center border border-danger" name="kilometri" placeholder="Numero KM...">
                 </div>
                 <!-- FASCIE DI ETA' -->
                 <div class="ms-3">
-                    <label class="title" for="">Fascia d'età</label> 
-
-                    <div class="form-floating">
-                        <select class="form-select mb-5" id="user-age">
-                            <option value="Minorene">Minorene</option>
-                            <option value="Maggiorenne">Maggiorenne</option>
-                            <option value="Anzino">Anziano</option>
-                        </select>
-                    </div>
+                    <label for="nameSurname" class="form-label title">Fascia d'età</label>
+                    
+                    <select id="user-age" class="form-select text-center border border-danger" name="fasciaEtà" aria-label="">
+                        <option selected="minorenne">Minorenne</option>
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="over">Over65</option>
+                    </select>
                 </div> 
             </form>
             <!-- BOTTONI -->
-            <div>
+            <div class="button">
                 <button type="button" id="gen-btn" class="btn btn-primary">Genera</button>
                 <button type="reset" id="ann-btn" class="btn btn-warning">Annulla</button>
             </div>

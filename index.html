@@ -15,20 +15,21 @@
         <div class="container cont-bor p-3 mb-2 bg-white">
             <form class="d-flex justify-content-center">
                 <!-- NOME E COGNOME -->
-                <div class="ms-2 ">
-                    <label for="">Nome e Cognome</label>
+                <div class="ms-3">
+                    <label class="title" for="">Nome e Cognome</label>
                     <input type="text" class="form-control mb-3" id="user-name"/>
                 </div>
                 <!-- KM DA PERCORRERE -->
-                <div class="ms-2 ">
-                    <label for="">Km da percorrere</label>
+                <div class="ms-3">
+                    <label class="title" for="">Km da percorrere</label>
                     <input type="text" class="form-control mb-3" id="path"/>
                 </div>
                 <!-- FASCIE DI ETA' -->
-                <div class="ms-2 ">
-                    <label for="">Fascia d'età</label>   
+                <div class="ms-3">
+                    <label class="title" for="">Fascia d'età</label> 
+
                     <div class="form-floating">
-                        <select class="form-select mb-3 p-1" id="floatingSelectGrid user-age">
+                        <select class="form-select mb-5" id="user-age">
                             <option value="Minorene">Minorene</option>
                             <option value="Maggiorenne">Maggiorenne</option>
                             <option value="Anzino">Anziano</option>
@@ -36,26 +37,53 @@
                     </div>
                 </div> 
             </form>
-        </div>
-        <!-- BOTTONI -->
-        <!-- STAMPA BIGLIETTO -->
-        <div class="container cont-tik p-3 mb-5 bg-white">
-            <div class="row g-2">
-               
-                </div>
-                <div class="col-md">
-                  <div class="form-floating">
-                    <select class="form-select" id="floatingSelectGrid">
-                      <option selected>Open this select menu</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                    <label for="floatingSelectGrid">Works with selects</label>
-                  </div>
-                </div>
+            <!-- BOTTONI -->
+            <div>
+                <button type="button" id="gen-btn" class="btn btn-primary">Genera</button>
+                <button type="reset" id="ann-btn" class="btn btn-warning">Annulla</button>
             </div>
         </div>
+        <!-- STAMPA BIGLIETTO -->
+        <section id="hidden-ticket" class="container text-center cont-tik">
+            <h2 class="text-center text-uppercase text-light p-2 ">il tuo biglietto</h2>
+
+            <div class="bg-light rounded pt-3 pb-5 ps-3">
+                <div class="text-start text-uppercase fw-bold">
+                    dettagli passeggeri
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <div class="text-start text-uppercase fw-bold">Nome passeggero</div>
+                        <div id="btn-user" class="text-start pt-2">0</div>
+                    </div>
+    
+                    <div class="col-9">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="text-start fw-bold">Offerta</div>
+                                <div class="text-start pt-3">Biglietto Standard</div>
+                            </div>
+    
+                            <div class="col-3">
+                                <div class="text-start fw-bold">Carrozza</div>
+                                <div  class="text-start pt-3">8</div>
+                            </div>
+    
+                            <div class="col-3">
+                                <div class="text-start fw-bold">Codice CP</div>
+                                <div class="text-start pt-3">12345</div>
+                            </div>
+    
+                            <div class="col-3">
+                                <div class="text-start fw-bold">Costo biglietto</div>
+                                <div id="price" class="text-start pt-3">2,10€</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
     <script type="text/javascript" src="./js/script.js"></script>
 </body>

@@ -31,8 +31,8 @@ genBtn.addEventListener('click', function() {
 // rimuovo i valori degli input e nascondo il biglietto
 
 annBtn.addEventListener('click',function(){
-    userName.innerHTML = 0;
-    path
-    
+    userName.value = "";
+    path.value = "";
+    hiddenTicket.style.display = "none";
 }
 )

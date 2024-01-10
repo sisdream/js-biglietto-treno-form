@@ -9,18 +9,53 @@
 </head>
 <body>
     <!-- CONTENITORE BIGLIETTO -->
-    <section class="container big-cont bg-danger text-white p-3 ">
+    <section class="container big-cont text-white p-3 ">
         <h1 class="text-center">Calcola il prezzo del tuo biglietto</h1>
         <!-- DATI PER IL BIGLIETTO -->
         <div class="container cont-bor p-3 mb-2 bg-white">
-            <form>
-                <div>
-                    
+            <form class="d-flex justify-content-center">
+                <!-- NOME E COGNOME -->
+                <div class="ms-2 ">
+                    <label for="">Nome e Cognome</label>
+                    <input type="text" class="form-control mb-3" id="user-name"/>
                 </div>
+                <!-- KM DA PERCORRERE -->
+                <div class="ms-2 ">
+                    <label for="">Km da percorrere</label>
+                    <input type="text" class="form-control mb-3" id="path"/>
+                </div>
+                <!-- FASCIE DI ETA' -->
+                <div class="ms-2 ">
+                    <label for="">Fascia d'età</label>   
+                    <div class="form-floating">
+                        <select class="form-select mb-3 p-1" id="floatingSelectGrid user-age">
+                            <option value="Minorene">Minorene</option>
+                            <option value="Maggiorenne">Maggiorenne</option>
+                            <option value="Anzino">Anziano</option>
+                        </select>
+                    </div>
+                </div> 
             </form>
         </div>
+        <!-- BOTTONI -->
         <!-- STAMPA BIGLIETTO -->
-        <div class="container cont-tik p-3 mb-5 bg-white"></div>
+        <div class="container cont-tik p-3 mb-5 bg-white">
+            <div class="row g-2">
+               
+                </div>
+                <div class="col-md">
+                  <div class="form-floating">
+                    <select class="form-select" id="floatingSelectGrid">
+                      <option selected>Open this select menu</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                    <label for="floatingSelectGrid">Works with selects</label>
+                  </div>
+                </div>
+            </div>
+        </div>
     </section>
     <script type="text/javascript" src="./js/script.js"></script>
 </body>

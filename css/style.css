@@ -1,6 +1,7 @@
 /* CONTENITORE BIGLIETTO */
 .big-cont{
-    height: 40rem;
+    height: 46rem;
+    background-color: #b91450;
 }
 
 h1{
@@ -8,18 +9,32 @@ h1{
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
-/* DATI PER IL BIGLIETTO */
-.cont-bor{
-    margin-top: 5rem;
-    height: 13rem;
-    width: 55rem;
-    border-radius: 15px;
-}
-
-/* STAMPA DEL BIGLIETTO */
-
+.cont-bor,
 .cont-tik{
     margin-top: 5rem;
     height: 13rem;
     width: 55rem;
+    color:#b91450;
 }
+
+/* DATI PER IL BIGLIETTO */
+.cont-bor{
+    border-radius: 15px;
+}
+
+#user-name,
+#path,
+#user-age{
+    border: 1px solid #b91450; 
+}
+#user-name,
+#path{
+    height: 4rem;
+}
+
+#floatingSelectGrid {
+    border: 1px solid #b91450; 
+    margin-top: 2rem;
+    text-align: center;
+}
+/* STAMPA DEL BIGLIETTO */

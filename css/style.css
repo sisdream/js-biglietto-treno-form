@@ -1,0 +1,17 @@
+/* CONTENITORE BIGLIETTO */
+.big-cont{
+    height: 600px;
+}
+
+/* DATI PER IL BIGLIETTO */
+.cont-bor{
+    margin-top: 50px;
+    height: 200px;
+}
+
+/* STAMPA DEL BIGLIETTO */
+
+.cont-tik{
+    margin-top: 50px;
+    height: 200px;
+}

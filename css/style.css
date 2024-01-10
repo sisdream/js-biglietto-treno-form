@@ -1,17 +1,25 @@
 /* CONTENITORE BIGLIETTO */
 .big-cont{
-    height: 600px;
+    height: 40rem;
+}
+
+h1{
+    font-size: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 /* DATI PER IL BIGLIETTO */
 .cont-bor{
-    margin-top: 50px;
-    height: 200px;
+    margin-top: 5rem;
+    height: 13rem;
+    width: 55rem;
+    border-radius: 15px;
 }
 
 /* STAMPA DEL BIGLIETTO */
 
 .cont-tik{
-    margin-top: 50px;
-    height: 200px;
+    margin-top: 5rem;
+    height: 13rem;
+    width: 55rem;
 }
